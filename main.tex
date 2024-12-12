@@ -1,0 +1,162 @@
+\documentclass[11pt,a4paper]{article}
+
+% Required packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage[scale=0.85]{sourcecodepro}
+\usepackage[defaultsans]{lato}
+
+% Custom colors
+\definecolor{primary}{RGB}{25,118,210}
+\definecolor{secondary}{RGB}{51,51,51}
+\definecolor{links}{RGB}{0,114,178}
+
+% Page geometry
+\geometry{
+    left=1.8cm,
+    right=1.8cm,
+    top=1.8cm,
+    bottom=1.8cm
+}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=links,
+    filecolor=links,
+    urlcolor=links,
+    pdftitle={Vladislav Slugin - CV},
+    pdfauthor={Vladislav Slugin}
+}
+
+% Custom section style
+\titleformat{\section}
+    {\Large\bfseries\color{primary}\sffamily}
+    {}{0em}
+    {}
+    [\vspace{-0.5em}\rule{\textwidth}{0.4pt}]
+
+% Custom commands for contact info
+\newcommand{\contactItem}[2]{
+    {\color{secondary}\small#1} & {\small\href{#2}{#2}} \\
+}
+
+\newcommand{\contactItemPlain}[2]{
+    {\color{secondary}\small#1} & {\small#2} \\
+}
+
+% Document begin
+\begin{document}
+\sffamily
+
+% Header
+{\LARGE\bfseries\color{primary} Vladislav Slugin}
+\vspace{1em}
+
+% Contact information in two columns with improved spacing and clickable links
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+\begin{tabular}{@{}ll@{}}
+    \contactItemPlain{\faMapMarker*}{Frankfurt, Germany}\\[0.3em]
+    \contactItem{\faEnvelope}{vslugin@vsdev.top}\\[0.3em]
+    \contactItemPlain{\faMobile*}{+49 1763 763 1100}
+\end{tabular} &
+\begin{tabular}{@{}ll@{}}
+    \contactItem{\faGlobe}{https://vsdev.top}\\[0.3em]
+    \contactItem{\faLinkedin}{https://linkedin.com/in/vladislav-slugin}\\[0.3em]
+    \contactItem{\faGithub}{https://github.com/vladslugin987}
+\end{tabular}
+\end{tabularx}
+
+\vspace{1em}
+
+\section*{Career Objective}
+{\justify
+Ambitious software developer seeking a position as a Working Student, Intern, or Software Developer. Focused on professional growth, effective team collaboration, and contributing to innovative projects.
+}
+
+\section*{Education}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Apr 2022 -- Nov 2026} & \textbf{Goethe University Frankfurt am Main}\\
+& Computer Science, B.Sc. (Expected)\\[0.8em]
+\textbf{Apr 2021 -- Nov 2021} & \textbf{Studienkolleg Jena}\\
+& T-Kurs (Technical Course)
+\end{tabularx}
+
+\section*{Work Experience}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Aug 2023 -- Present} & \textbf{Working Student IT-Support} at \textbf{Devoteam}\\
+& Frankfurt, Germany / Remote\\[0.3em]
+& • Provided technical support for employees across Germany\\
+& • Maintained servers and computers\\
+& • Developed automation scripts and created web applications\\[0.3em]
+& \textit{Technologies:} Python, TypeScript, Google Apps Script\\[0.8em]
+
+\textbf{Mar 2018 -- Present} & \textbf{Independent Software Developer} (Freelance)\\[0.3em]
+& • Developed software solutions, web applications, and automation tools\\
+& • Created desktop applications and Telegram bots\\[0.3em]
+& \textit{Technologies:} Java, Python, React, Node.js, Vite
+\end{tabularx}
+
+\section*{Notable Projects}
+\begin{itemize}[leftmargin=*, itemsep=0.8em]
+    \item \textbf{Speech Analyzer for German Parliament + DUUI Component}\\
+    Six-month university project analyzing parliament speeches since 1949 using NLP.\\
+    \textit{Technologies:} Java, MongoDB, UIMA, Docker, Git
+    
+    \item \textbf{EnDeCode - Anti-piracy Software}\\
+    Program for file watermarking and protection.\\
+    \textit{Technologies:} Python (ENDEcode v1.5.2), Kotlin + Compose Multiplatform (ENDEcode v2.0.0), OpenCV
+    
+    \item \textbf{vsdev.top - Portfolio Website}\\
+    Personal portfolio with admin panel and Telegram integration.\\
+    \textit{Technologies:} React, Vite, Node, MySQL
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{multicols}{2}
+\textbf{Programming Languages}
+\begin{itemize}[leftmargin=*, nosep]
+    \item Python
+    \item Java
+    \item Kotlin
+    \item JavaScript
+    \item HTML/CSS
+\end{itemize}
+
+\columnbreak
+
+\textbf{Technologies \& Frameworks}
+\begin{itemize}[leftmargin=*, nosep]
+    \item React.js, Vite
+    \item Docker, Git
+    \item MongoDB, MySQL
+    \item Tailwind CSS
+    \item TypeScript, Google Apps Script
+\end{itemize}
+\end{multicols}
+
+\section*{Languages}
+\begin{tabular}{@{}l@{\hspace{2em}}l@{\hspace{2em}}l@{}}
+English: B2 & German: C1 & Russian: C2
+\end{tabular}
+
+\section*{Volunteer Experience}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Apr 2024 -- Aug 2024} & \textbf{Buddy Program Mentor}\\
+& Assisted first-semester students with university and German life integration\\[0.8em]
+\textbf{Oct 2024 -- Mar 2025} & \textbf{AWP Study Friend Program}\\
+& Supported refugee students in academic and cultural integration\\[0.8em]
+\textbf{2024} & \textbf{AI Week Frankfurt}\\
+& Volunteer and participant in AI-focused event
+\end{tabularx}
+
+\end{document}
