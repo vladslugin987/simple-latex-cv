@@ -14,6 +14,10 @@
 \usepackage{ragged2e}
 \usepackage[scale=0.85]{sourcecodepro}
 \usepackage[defaultsans]{lato}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
 
 % Custom colors
 \definecolor{primary}{RGB}{25,118,210}
@@ -59,104 +63,139 @@
 \sffamily
 
 % Header
-{\LARGE\bfseries\color{primary} Vladislav Slugin}
-\vspace{1em}
-
-% Contact information in two columns with improved spacing and clickable links
-\begin{tabularx}{\textwidth}{@{}XX@{}}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+{\LARGE\bfseries\color{primary} Vladislav Slugin} & 
+\multirow{6}{*}{\includegraphics[width=3.5cm, height=4.5cm, keepaspectratio]{photo.jpg}}\\[0.6em]
 \begin{tabular}{@{}ll@{}}
-    \contactItemPlain{\faMapMarker*}{Frankfurt, Germany}\\[0.3em]
-    \contactItem{\faEnvelope}{vslugin@vsdev.top}\\[0.3em]
-    \contactItemPlain{\faMobile*}{+49 1763 763 1100}
-\end{tabular} &
-\begin{tabular}{@{}ll@{}}
-    \contactItem{\faGlobe}{https://vsdev.top}\\[0.3em]
-    \contactItem{\faLinkedin}{https://linkedin.com/in/vladislav-slugin}\\[0.3em]
+    \contactItemPlain{\faMapMarker*}{Trier, Germany}\\[0.2em]
+    \contactItem{\faEnvelope}{vslugin@vsdev.top}\\[0.2em]
+    \contactItemPlain{\faMobile*}{+49 176 3763 1100}\\[0.2em]
+    \contactItem{\faGlobe}{https://vsdev.top}\\[0.2em]
+    \contactItem{\faLinkedin}{https://linkedin.com/in/vladislav-slugin}\\[0.2em]
     \contactItem{\faGithub}{https://github.com/vladslugin987}
-\end{tabular}
+\end{tabular} &
 \end{tabularx}
 
 \vspace{1em}
 
-\section*{Career Objective}
-{\justify
-Ambitious software developer seeking a position as a Working Student, Intern, or Software Developer. Focused on professional growth, effective team collaboration, and contributing to innovative projects.
+\section*{Profile / Profil}
+\justify{
+\textbf{EN:} Driven full-stack developer with expertise in automation and cross-platform applications. Building innovative solutions for real-world challenges with a focus on clean, maintainable code and optimized user experiences. Active contributor to open-source projects with a passion for continuous learning and international collaboration.
+
+\vspace{0.5em}
+\textbf{DE:} Engagierter Full-Stack-Entwickler mit Fachwissen in Automatisierung und plattformübergreifenden Anwendungen. Entwicklung innovativer Lösungen für reale Herausforderungen mit Fokus auf sauberen, wartbaren Code und optimierte Benutzererfahrungen. Aktiver Beitragender zu Open-Source-Projekten mit Leidenschaft für kontinuierliches Lernen und internationale Zusammenarbeit.
 }
 
-\section*{Education}
+\section*{Career Objective / Berufliches Ziel}
+\justify{
+\textbf{EN:} Detail-oriented software developer seeking a position as a Working Student, Intern, or Junior Developer. Passionate about continuous learning, effective collaboration, and contributing to innovative projects that deliver impactful solutions.
+
+\vspace{0.5em}
+\textbf{DE:} Detailorientierter Softwareentwickler auf der Suche nach einer Position als Werkstudent, Praktikant oder Junior Developer. Begeistert von kontinuierlichem Lernen, effektiver Zusammenarbeit und dem Beitrag zu innovativen Projekten, die wirkungsvolle Lösungen liefern.
+}
+
+\section*{Education / Ausbildung}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Apr 2022 -- Nov 2026} & \textbf{Goethe University Frankfurt am Main}\\
-& Computer Science, B.Sc. (Expected)\\[0.8em]
+\textbf{Apr 2025 -- Present} & \textbf{Hochschule Trier – University of Applied Sciences}\\
+& EN: Computer Science, B.Sc. (in progress)\\
+& DE: Informatik, Bachelor (laufend)\\[0.8em]
+
+\textbf{Apr 2022 -- Mar 2025} & \textbf{Goethe University Frankfurt am Main}\\
+& EN: Computer Science, B.Sc. (not completed)\\
+& DE: Informatik, Bachelor (nicht abgeschlossen)\\[0.8em]
+
 \textbf{Apr 2021 -- Nov 2021} & \textbf{Studienkolleg Jena}\\
-& T-Kurs (Technical Course)
+& EN: Technical Course, Final Examination: 07.01.2022\\
+& DE: T-Kurs, Feststellungsprüfung: 07.01.2022\\[0.8em]
+
+\textbf{Sep 2009 -- Jun 2020} & \textbf{School-Gymnasium No. 8 Almaty, Kazakhstan}\\
+& EN: Certificate of General Secondary Education\\
+& DE: Zeugnis der allgemeinen mittleren Bildung
 \end{tabularx}
 
-\section*{Work Experience}
+\section*{Work Experience / Berufserfahrung}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
-\textbf{Aug 2023 -- Present} & \textbf{Working Student IT-Support} at \textbf{Devoteam}\\
+\textbf{Aug 2023 -- Feb 2025} & \textbf{Working Student IT-Support} at \textbf{Devoteam}\\
 & Frankfurt, Germany / Remote\\[0.3em]
-& • Provided technical support for employees across Germany\\
-& • Maintained servers and computers\\
-& • Developed automation scripts and created web applications\\[0.3em]
-& \textit{Technologies:} Python, TypeScript, Google Apps Script\\[0.8em]
+& \textbf{EN:} \\
+& • Delivered technical support to corporate employees across Germany \\
+& • Managed and optimized IT infrastructure and system workflows \\
+& • Developed custom automation tools and internal web applications \\[0.3em]
+& \textbf{DE:} \\
+& • Technischer Support für Unternehmensangestellte in ganz Deutschland \\
+& • Verwaltung und Optimierung der IT-Infrastruktur und Systemabläufe \\
+& • Entwicklung maßgeschneiderter Automatisierungstools und interner Webanwendungen \\[0.3em]
+& \textit{Technologies:} Python, TypeScript, Google Apps Script, JavaScript\\[0.8em]
 
-\textbf{Mar 2018 -- Present} & \textbf{Independent Software Developer} (Freelance)\\[0.3em]
-& • Developed software solutions, web applications, and automation tools\\
-& • Created desktop applications and Telegram bots\\[0.3em]
+\textbf{Mar 2018 -- Present} & \textbf{Freelance Full-Stack Developer / Freiberuflicher Full-Stack-Entwickler}\\[0.3em]
+& \textbf{EN:} \\
+& • Created and deployed custom software solutions including desktop and web applications \\
+& • Designed and implemented automation scripts and Telegram bots for diverse client needs \\[0.3em]
+& \textbf{DE:} \\
+& • Erstellung und Bereitstellung individueller Softwarelösungen einschließlich Desktop- und Webanwendungen \\
+& • Design und Implementierung von Automatisierungsskripten und Telegram-Bots für verschiedene Kundenbedürfnisse \\[0.3em]
 & \textit{Technologies:} Java, Python, React, Node.js, Vite
 \end{tabularx}
 
-\section*{Notable Projects}
+\section*{Notable Projects / Bemerkenswerte Projekte}
 \begin{itemize}[leftmargin=*, itemsep=0.8em]
-    \item \textbf{Speech Analyzer for German Parliament + DUUI Component}\\
-    Six-month university project analyzing parliament speeches since 1949 using NLP.\\
-    \textit{Technologies:} Java, MongoDB, UIMA, Docker, Git
-    
-    \item \textbf{EnDeCode - Anti-piracy Software}\\
-    Program for file watermarking and protection.\\
-    \textit{Technologies:} Python (ENDEcode v1.5.2), Kotlin + Compose Multiplatform (ENDEcode v2.0.0), OpenCV
-    
-    \item \textbf{vsdev.top - Portfolio Website}\\
-    Personal portfolio with admin panel and Telegram integration.\\
-    \textit{Technologies:} React, Vite, Node, MySQL
+    \item \textbf{EnDeCode – Anti-piracy Software / Anti-Piraterie-Software}\\
+    \textbf{EN:} Advanced file protection tool embedding imperceptible digital watermarks directly into image files for copyright tracking and content verification. Integrated into a lightweight security workflow supporting evidence generation and leak detection.\\
+    \textbf{DE:} Fortschrittliches Dateischutz-Tool, das unsichtbare digitale Wasserzeichen direkt in Bilddateien einbettet, um Urheberrechte nachzuverfolgen und Inhalte zu verifizieren. In einen schlanken Sicherheits-Workflow integriert zur Nachweisführung und Leck-Erkennung.\\
+    \textit{Technologies:} Python, Kotlin, Compose Multiplatform, OpenCV
+
+    \item \textbf{vsdev.top – Portfolio Website / Portfolio-Webseite}\\
+    \textbf{EN:} Personal portfolio platform with custom admin interface and integrated Telegram content synchronization\\
+    \textbf{DE:} Persönliche Portfolio-Plattform mit maßgeschneiderter Administratoroberfläche und integrierter Telegram-Inhaltssynchronisierung\\
+    \textit{Technologies:} React, Vite, Node.js, MySQL
 \end{itemize}
 
-\section*{Technical Skills}
-\begin{multicols}{2}
-\textbf{Programming Languages}
-\begin{itemize}[leftmargin=*, nosep]
-    \item Python
-    \item Java
-    \item Kotlin
-    \item JavaScript
-    \item HTML/CSS
-\end{itemize}
+\section*{Technical Skills / Technische Fähigkeiten}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+\textbf{Category / Kategorie} & \textbf{Skills / Fähigkeiten} \\
+\midrule
+Languages / Programmiersprachen & Python, Java, Kotlin, JavaScript, HTML/CSS \\
+\midrule
+Frameworks / Tools & React.js, Node.js, Vite, Tailwind CSS, Docker, Git \\
+\midrule
+Databases / Datenbanken & MySQL, MongoDB, PostgreSQL \\
+\midrule
+Other / Sonstige & Google Apps Script, OpenCV, Compose Multiplatform, TypeScript \\
+\bottomrule
+\end{tabularx}
 
-\columnbreak
-
-\textbf{Technologies \& Frameworks}
-\begin{itemize}[leftmargin=*, nosep]
-    \item React.js, Vite
-    \item Docker, Git
-    \item MongoDB, MySQL
-    \item Tailwind CSS
-    \item TypeScript, Google Apps Script
-\end{itemize}
-\end{multicols}
-
-\section*{Languages}
-\begin{tabular}{@{}l@{\hspace{2em}}l@{\hspace{2em}}l@{}}
-English: B2 & German: C1 & Russian: C2
+\section*{Languages / Sprachen}
+\begin{tabular}{@{}l@{\hspace{2em}}l@{\hspace{2em}}l@{\hspace{2em}}l@{}}
+English: B2 & German/Deutsch: C1 & Russian/Russisch: C2 & Spanish/Spanisch: A1
 \end{tabular}
 
-\section*{Volunteer Experience}
+\section*{Certifications / Zertifikate}
+\begin{itemize}[leftmargin=*, itemsep=0.6em]
+    \item Web Development MERN Stack (MongoDB, Express, React, Node.js) – Decode.kz, 2020
+    \item HTML, CSS, JavaScript, PHP – Sololearn, 2018
+    \item Web Developer Beginner – Decode.kz, 2019
+\end{itemize}
+
+\section*{Volunteer Experience / Ehrenamtliche Tätigkeit}
 \begin{tabularx}{\textwidth}{@{}l X@{}}
 \textbf{Apr 2024 -- Aug 2024} & \textbf{Buddy Program Mentor}\\
-& Assisted first-semester students with university and German life integration\\[0.8em]
-\textbf{Oct 2024 -- Mar 2025} & \textbf{AWP Study Friend Program}\\
-& Supported refugee students in academic and cultural integration\\[0.8em]
-\textbf{2024} & \textbf{AI Week Frankfurt}\\
-& Volunteer and participant in AI-focused event
+& \textbf{EN:} Guided international students through academic navigation and social integration in the German university system\\
+& \textbf{DE:} Begleitung internationaler Studierender bei der akademischen Orientierung und sozialen Integration im deutschen Universitätssystem\\[0.8em]
+\textbf{Oct 2024 -- Mar 2025} & \textbf{AWP Study Friend Program Mentor}\\
+& \textbf{EN:} Facilitated university adaptation for refugee students through academic guidance and cultural integration support\\
+& \textbf{DE:} Unterstützung geflüchteter Studierender bei der universitären Anpassung durch akademische Beratung und kulturelle Integrationsbegleitung\\[0.8em]
+\textbf{Oct 2024} & \textbf{AI Week Frankfurt}\\
+& \textbf{EN:} Active volunteer and participant at a premier conference focused on artificial intelligence advancements and applications\\
+& \textbf{DE:} Aktiver Freiwilliger und Teilnehmer an einer führenden Konferenz mit Schwerpunkt auf Fortschritten und Anwendungen künstlicher Intelligenz
 \end{tabularx}
+
+\section*{Hobbies / Interessen}
+\begin{itemize}[leftmargin=*, itemsep=0.6em]
+    \item \textbf{EN:} Active participation in tech community events including industry workshops, developer meetups, and competitive hackathons\\
+    \textbf{DE:} Aktive Teilnahme an Technologie-Community-Veranstaltungen, darunter Branchenworkshops, Entwickler-Meetups und Wettbewerbs-Hackathons
+    \item \textbf{EN:} Independent game development focusing on innovative gameplay mechanics and interactive storytelling\\
+    \textbf{DE:} Eigenständige Spieleentwicklung mit Fokus auf innovative Spielmechaniken und interaktives Storytelling
+\end{itemize}
 
 \end{document}
